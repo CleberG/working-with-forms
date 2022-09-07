@@ -29,8 +29,9 @@ const handlingForms = {
           members.findIndex(member => member.fname === this.newMember.fname)
         )
         if (
-          members.findIndex(member => member.fname === this.newMember.fname) < 0 &&
-          members.findIndex(member => member.lname === this.newMember.lname) < 0 && 
+          members.findIndex(member => member.fname === this.newMember.fname) <
+            0 &&
+          members.findIndex(member => member.lname === this.newMember.lname) < 0
         ) {
           this.members.push(this.newMember)
           this.newMember = {}
